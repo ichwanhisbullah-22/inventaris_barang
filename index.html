@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Inventaris Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sistem Manajemen Inventaris Barang</h1>
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>Tambah / Edit Barang</h2>
+
+        <input type="text" id="kodeBarang" placeholder="Kode Barang">
+
+        <input type="text" id="namaBarang" placeholder="Nama Barang">
+
+        <select id="kategori">
+            <option>Elektronik</option>
+            <option>Makanan</option>
+            <option>Minuman</option>
+            <option>ATK</option>
+            <option>Lainnya</option>
+        </select>
+
+        <input type="number" id="jumlahStok" placeholder="Jumlah Stok">
+
+        <input type="number" id="hargaJual" placeholder="Harga Jual">
+
+        <div class="button-group">
+            <button id="btnSimpan">Simpan</button>
+            <button id="btnReset">Reset</button>
+        </div>
+    </div>
+
+    <div class="table-box">
+        <h2>Daftar Stok Gudang</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Kode</th>
+                    <th>Nama</th>
+                    <th>Kategori</th>
+                    <th>Stok</th>
+                    <th>Harga</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelBody">
+
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
